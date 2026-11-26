@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap);
+:root {
+  /* Overlay layers */
+  --z-overlay: 400;
+
+  --z-spotlight: 1000; /* Tutorial spotlights/guided help */
+
+  /* System layers */
+  --z-critical: 2000; /* Critical system notifications */
+
+  /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  --background: #f3f5f8;
+  --foreground: #17263a;
+  --surface: #e9eef4;
+  --surface-foreground: #17263a;
+  --sidebar: #0b1930;
+  --sidebar-foreground: #f5f2e9;
+  --card: #fffefa;
+  --card-foreground: #17263a;
+  --popup: #fffefa;
+  --popup-foreground: #17263a;
+  --primary: #0b1930;
+  --primary-foreground: #fffefa;
+  --secondary: #e9eef4;
+  --secondary-foreground: #23344b;
+  --accent: #d4af62;
+  --accent-foreground: #241d10;
+  --muted: #e8edf2;
+  --muted-foreground: #64748b;
+  --success: #287a59;
+  --success-foreground: #ffffff;
+  --error: #b54747;
+  --error-foreground: #ffffff;
+  --warning: #b77a24;
+  --warning-foreground: #ffffff;
+  --info: #416b91;
+  --info-foreground: #ffffff;
+  --info-hover: #345b80;
+  --info-active: #294b6d;
+  --border: #dce3eb;
+  --font-family-base: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-display: "Newsreader", Georgia, serif;
+  --font-family-heading: "Newsreader", Georgia, serif;
+  --font-family-monospace: "IBM Plex Mono", SFMono-Regular, Consolas, monospace;
+  --font-family-cursive: cursive;
+  --shadow: 0 1px 2px rgba(11, 25, 48, 0.04), 0 3px 8px rgba(11, 25, 48, 0.04);
+  --shadow-md: 0 3px 8px rgba(11, 25, 48, 0.05), 0 12px 24px rgba(11, 25, 48, 0.05);
+  --shadow-lg: 0 8px 20px rgba(11, 25, 48, 0.08), 0 24px 44px rgba(11, 25, 48, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(212, 175, 98, 0.28);
+  --radius-sm: 0.35rem;
+  --radius: 0.6rem;
+  --radius-md: 0.85rem;
+  --radius-lg: 1.15rem;
+  --radius-full: 9999px;
+  --animation-duration-fast: 150ms;
+  --animation-duration-normal: 240ms;
+  --animation-duration-slow: 360ms;
+  --chart-color-1: #0b1930;
+  --chart-color-2: #d4af62;
+  --chart-color-3: #607b98;
+  --chart-color-4: #8da69b;
+  --chart-color-5: #b8a7a0;
+}
+
+.dark {
+  --background: #101a29;
+  --foreground: #edf1f5;
+  --surface: #192638;
+  --surface-foreground: #edf1f5;
+  --sidebar: #081321;
+  --sidebar-foreground: #f5f2e9;
+  --card: #1b293b;
+  --card-foreground: #edf1f5;
+  --popup: #223248;
+  --popup-foreground: #edf1f5;
+  --primary: #d4af62;
+  --primary-foreground: #201a0e;
+  --secondary: #26374d;
+  --secondary-foreground: #edf1f5;
+  --accent: #d4af62;
+  --accent-foreground: #201a0e;
+  --muted: #29394d;
+  --muted-foreground: #aab8c8;
+  --success: #4d9b78;
+  --success-foreground: #081b12;
+  --error: #d36a6a;
+  --error-foreground: #240b0b;
+  --warning: #d49a45;
+  --warning-foreground: #241707;
+  --info: #6e9bc4;
+  --info-foreground: #081624;
+  --info-hover: #82add2;
+  --info-active: #5c88b0;
+  --border: #34455b;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 3px 8px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.16);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.24), 0 24px 44px rgba(0, 0, 0, 0.2);
+  --shadow-focus: 0 0 0 3px rgba(212, 175, 98, 0.3);
+}
