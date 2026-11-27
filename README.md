@@ -2,40 +2,47 @@
 
 **One Church. One Community. One Connected Platform.**
 
-A responsive church membership and administration workspace built with a navy-and-gold visual identity.
+A responsive church membership and administration workspace for web and Android, built with a modern navy-and-gold visual identity.
 
-## Current status
+## Current implementation
 
-Stage 1 frontend preview is being developed in Floot. The current interface uses fictional demonstration records only.
+The app is hosted in Floot. This repository is a source snapshot of the project and is not yet a standalone deployable React application.
 
-Included views:
-- Dashboard and membership overview
-- Member directory and search
-- Registration demonstration form
-- Youth Connect
-- Ministries and departments
-- Events and attendance overview
-- Reports and analytics preview
-- Settings and role overview
+Implemented:
+- Responsive dashboard, member directory, registration, Youth Connect, ministries, events, reports and settings views.
+- Floot-managed PostgreSQL database and authentication.
+- Secure password login, logout, session handling and password-reset flows.
+- Server-side church role and branch checks for member endpoints.
+- Member registration with generated membership IDs.
+- Branch-scoped member directory that returns only directory-safe fields.
+- Audit-log entries for member creation.
+- Guardian-consent safeguards for storing youth education, skills, talent, career and profession details.
+- Navy #0B1930 and gold #D4AF62 design system.
 
-## Important
+## Database modules
 
-This repository is a source snapshot of the Floot-hosted project, not a standalone deployable React project yet. The app currently imports Floot's shared component kit and uses Floot's page/runtime conventions. Backend persistence, real authentication, role enforcement, secure youth-data handling, audit logs, exports, and Android packaging are not yet implemented.
+The database includes branches, ministries, members, member-to-ministry assignments, youth profiles, church events, event attendance, user access profiles and audit logs.
 
-Do not enter real member information into the demo interface.
+## Security notes
 
-## Planned next stage
+- Member APIs require an authenticated and active church access profile.
+- Member directory access and registration are limited to authorized leadership roles on the server.
+- Private contact fields are not returned by the directory endpoint.
+- Youth-related profile details for minors are not stored unless guardian consent has been confirmed.
+- Use real member data only in the authenticated app, with appropriate church authorization and privacy notices. Do not commit personal member data, passwords, reset codes or secrets to this repository.
 
-1. Provision managed PostgreSQL and authentication.
-2. Design normalized membership, ministry, event, attendance and youth-profile tables.
-3. Enforce permissions server-side and apply data-minimization safeguards.
-4. Wire registration and member directory to the database.
-5. Add tests, backups, audit logging and export workflows.
-6. Prepare and test the Android build.
+## Remaining work
+
+- Complete member profile view, editing, archive/deactivation and role-aware UI.
+- Database-backed ministry management and event/attendance workflows.
+- Reports based on live database data and safe export functionality.
+- Complete role/branch administration and additional authorization tests.
+- Final browser/mobile QA, backups and Android build verification.
+- Production publishing (not yet published).
 
 ## Design
 
-- Navy: `#0B1930`
-- Gold: `#D4AF62`
+- Navy: #0B1930
+- Gold: #D4AF62
 - Display type: Newsreader
 - Interface type: IBM Plex Sans
