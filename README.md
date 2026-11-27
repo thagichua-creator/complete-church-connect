@@ -12,11 +12,12 @@ Implemented:
 - Responsive dashboard, member directory, registration, Youth Connect, ministries, events, reports and settings views.
 - Floot-managed PostgreSQL database and authentication.
 - Secure password login, logout, session handling and password-reset flows.
-- Server-side church role and branch checks for member endpoints.
+- Server-side church role and branch checks for member and ministry endpoints.
 - Member registration with generated membership IDs.
 - Branch-scoped member directory that returns only directory-safe fields.
-- Audit-log entries for member creation.
+- Audit-log entries for member creation, updates, archiving and ministry creation.
 - Guardian-consent safeguards for storing youth education, skills, talent, career and profession details.
+- Live member directory, member editing and soft-archiving, and database-backed ministry directory and creation.
 - Navy #0B1930 and gold #D4AF62 design system.
 
 ## Database modules
@@ -33,8 +34,8 @@ The database includes branches, ministries, members, member-to-ministry assignme
 
 ## Remaining work
 
-- Complete member profile view, editing, archive/deactivation and role-aware UI.
-- Database-backed ministry management and event/attendance workflows.
+- Member editing and soft-archiving with branch-scoped authorization and audit logs.
+- Ministry directory and creation are database-backed; event/attendance workflows remain to be implemented.
 - Reports based on live database data and safe export functionality.
 - Complete role/branch administration and additional authorization tests.
 - Final browser/mobile QA, backups and Android build verification.
